@@ -24,6 +24,22 @@ body {
 	background-size: cover;
 	position: relative;
 	height: calc(100vh - 9vh);
+	text-align: center;
+	overflow: hidden;
+}
+
+#prev {
+	width: 50px;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 30px;
+	position: relative;
+	top: 50px;
+}
+
+#prev:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	
 }
 
 #book  {
@@ -46,22 +62,30 @@ body {
 	height: 563px;
 	margin: auto;
 	display: none;
+	position: relative;
 }
 
 .pic {
 	position: relative;
 }
 
-.pic:before {
+.pge:after {
 	display: block;
-	content:"dfsdfs";
+	content:"";
 	position: absolute;
-	bottom: 0px;
-	right: -30px;
-	width:50px;
-	height:50px;
-	background-color: blue;
-	z-index: 999;
+	bottom: -4px;
+	right: 0px;
+	width: 0; 
+    height: 0; 
+    border-bottom: 100px solid white;
+    border-left: 100px solid transparent;
+	z-index: 9;
+	opacity: 0;
+	transition: .5s;
+}
+
+.pge:hover:after {
+	opacity: 0.2;
 }
 
 @keyframes example {
@@ -70,7 +94,7 @@ body {
 }
 
 .show {
-	display: block !important;
+	display: inline-block !important;
 	animation-name: example;
 	animation-duration: .3s;
 	animation-timing-function: ease-in-out;
