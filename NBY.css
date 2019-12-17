@@ -25,7 +25,6 @@ body {
 	position: relative;
 	height: calc(100vh - 9vh);
 	text-align: center;
-	overflow: hidden;
 }
 
 #prev {
