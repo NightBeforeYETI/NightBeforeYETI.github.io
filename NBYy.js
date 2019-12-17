@@ -58,7 +58,10 @@ $(document).ready(function() {
 		$("#tip").fadeOut();
 	});
 	
-	$("#loading").fadeOut("slow");
+	setTimeout(function(){
+	
+		$("#loading").fadeOut("slow");
+	}, 2000);
 
 });
 
