@@ -9,15 +9,16 @@ $(document).ready(function() {
 	function pageFlipPack() {
 		var flipIndex = 0;
 		var page = $(".pge");
-		pageActive(0);
 		pageClick();
+		page.eq(0).addClass("show");
+		
 		function pageActive(n) {
-			page.eq(n).addClass("show");
 			
-			if ((page.eq(n - 1).hasClass("show")) && (n < page.length)) {
+			if ((page.eq(n).hasClass("show")) && (n < (page.length - 1))) {
 				
-				page.eq(n - 1).removeClass("show");
-				page.eq(n).addClass("show");
+				page.eq(n).removeClass("show");
+				page.eq(n + 1).addClass("show");
+				flipIndex++
 			}
 			
 			else {
@@ -25,13 +26,31 @@ $(document).ready(function() {
 			}
 		}
 		
+		function pageActivePrev(n) {
+			if ((page.eq(n).hasClass("show")) && (n > 0)) {
+				
+				page.eq(n).removeClass("show");
+				page.eq(n - 1).addClass("show");
+				flipIndex--;
+			}
+		}	
+		
 		function pageClick(){
 			$("#flipContain").click(function() {
-				flipIndex++;
 				pageActive(flipIndex);	
+				console.log('prov');
+			});
+			
+			$("#prev").click(function() {
+				
+				pageActivePrev(flipIndex);
+				console.log('prev');
 			});
 			
 		}
+		
+			
+
 	}
 
 	$("#flipContain").one("click", function() {
@@ -40,7 +59,5 @@ $(document).ready(function() {
 	
 	
 
-
-
-
 });
+
