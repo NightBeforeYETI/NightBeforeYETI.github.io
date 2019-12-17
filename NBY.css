@@ -1,132 +1,58 @@
-#flipbook {
-	width: 100%;
-	margin: auto !important;
-	margin-top: 80px !important;
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="NBYy.js"></script>
+    <!-- <script type="text/javascript" src="turnjs4/lib/turn.js"></script>
+	<script type="text/javascript" src="turnjs4/lib/zoom.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="NBY.css"></link>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 	
-}
+</head>
+<body>
+	<div id="loading">
+		<img style="width: 50px; height: 50px;" src="loadspin.gif">
+	</div>
+	<div id="flipContain" class="shadow">
+		<div id="book"></div>
+		<div id="flipbook">
+			<div class="pge"><img class="pic show" style="width: 100%;" src="0coverlines.png"></div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="1First lines2.png"></div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="2Second lines.png"> </div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="3third lines.png"> </div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="4fourth lines.png"> </div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="5Fifth Lines.png"> </div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="6sixth lines.png"></div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="7seventhlines.png"></div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="8Eighth Lines.png"></div>
+			<div class="pge"><img class="pic" style="width: 100%;" src="9ninth lines2.png"></div>
+		</div>
+		<div id="tip">
+			<p style="color: white; font-family: 'Indie Flower', cursive; font-size: 30px; margin-top: 10px; " > &#8593; Click the Corner to Turn the Page! </p>
+		</div>
+		<div id="cup">
+			<img src="eggnog.png">
+		</div>
+		<div id="pressie">
+			<img src="pressie.png">
+		</div>
+	</div>
+	<div id="prev">
+			<p style=" color: white; font-family: 'Indie Flower', cursive; font-size: 30px; margin-top: 10px; ">&#8656;</p>
+	</div>
+	<div id="footer">
+		<img style="width: 17vw;" src="whitelogo.png">
+	</div>
 
-#flipContain {
-	width: 100%;
-	position: relative;
-	margin: auto;
-	margin-bottom: 40px;
-}
 
-#tip {
-	position: absolute;
-	bottom: -90px;
-	right: 160px;
-}
 
-body {
-	background-image: url(desko.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	height: calc(100vh - 9vh);
-	text-align: center;
-}
 
-#prev {
-	width: 50px;
-	margin: auto;
-	cursor: pointer;
-	border-radius: 30px;
-	position: relative;
-	top: 50px;
-}
 
-#prev:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	
-}
 
-#book  {
-	margin: auto !important;
-	left: 50.5%;
-	top: 13px;
-	transform: translate(-50%);
-	position: absolute;
-	width: 1010px;
-	height: 563px;
-	background-image: url(bookbg.png);
-	background-size: cover;
-	background-position: right bottom;
-	box-shadow: 0 4px 10px #222;
-	z-index: -1;
-}
+</body>
 
-.pge {
-	width: 1010px;
-	height: 563px;
-	margin: auto;
-	display: none;
-	position: relative;
-}
 
-.pic {
-	position: relative;
-}
 
-.pge:after {
-	display: block;
-	content:"";
-	position: absolute;
-	bottom: -4px;
-	right: 0px;
-	width: 0; 
-    height: 0; 
-    border-bottom: 100px solid white;
-    border-left: 100px solid transparent;
-	z-index: 9;
-	opacity: 0;
-	transition: .5s;
-}
 
-.pge:hover:after {
-	opacity: 0.2;
-}
 
-@keyframes example {
-	from {transform: translate(10%);}
-	to {transform: translate(0%);}
-}
-
-.show {
-	display: inline-block !important;
-	animation-name: example;
-	animation-duration: .3s;
-	animation-timing-function: ease-in-out;
-}
-
-#cup {
-	position: absolute;
-	left: 80px;
-	bottom: 70px;
-}
-
-#pressie {
-	position: absolute;
-	right: -50px;
-	top: -70px;
-}
-
-#footer {
-	position: absolute;
-	bottom: 2px;
-}
-
-#flipbook .shadow,
-#flipbook.shadow{
-  -webkit-box-shadow: 0 4px 10px #222;
-  -moz-box-shadow: 0 4px 10px #222;
-  -ms-box-shadow: 0 4px 10px #222;
-  -o-box-shadow: 0 4px 10px #222;
-  box-shadow: 0 4px 10px #222;
-}
-
-@media only screen and (max-width: 1668px) {
-	#pressie, #cup {
-		display: none;
-	}
-}
+</html>
