@@ -6,6 +6,7 @@
 	z-index: 999;
 	top: -80px;
 	left: 0px;
+	transition: 5s;
 }
 
 #loading img {
