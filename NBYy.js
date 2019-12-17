@@ -58,10 +58,10 @@ $(document).ready(function() {
 		$("#tip").fadeOut();
 	});
 	
-	setTimeout(function(){
 	
-		$("#loading").fadeOut(1000);
-	}, 200);
+	
+	$("#loading").fadeOut(1000);
+	
 
 });
 
