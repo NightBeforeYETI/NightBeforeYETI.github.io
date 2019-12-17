@@ -3,6 +3,7 @@
 
 $(document).ready(function() {
 	
+	
 	pageFlipPack();
 	
 	
@@ -57,7 +58,7 @@ $(document).ready(function() {
 		$("#tip").fadeOut();
 	});
 	
-	
+	$("#loading").addClass("hide");
 
 });
 
