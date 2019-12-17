@@ -19,7 +19,6 @@
 #flipbook {
 	width: 100%;
 	margin: auto !important;
-	margin-top: 2%;
 }
 
 #flipContain {
@@ -28,6 +27,7 @@
 	margin: auto;
 	margin-bottom: 40px;
 	display: inline-block;
+	margin-top: 2%;
 }
 
 #tip {
