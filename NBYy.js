@@ -58,7 +58,7 @@ $(document).ready(function() {
 		$("#tip").fadeOut();
 	});
 	
-	$("#loading").addClass("hide");
+	$("#loading").fadeOut("slow");
 
 });
 
