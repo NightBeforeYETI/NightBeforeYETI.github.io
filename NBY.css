@@ -27,7 +27,6 @@
 	margin: auto;
 	margin-bottom: 40px;
 	display: inline-block;
-	margin-top: 80px;
 }
 
 #tip {
@@ -41,8 +40,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	height: calc(100vh - 9vh);
+	height: 100vh;
 	text-align: center;
+	margin-top: 2%;
 }
 
 #prev {
