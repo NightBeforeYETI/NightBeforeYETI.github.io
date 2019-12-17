@@ -61,7 +61,7 @@ $(document).ready(function() {
 	setTimeout(function(){
 	
 		$("#loading").fadeOut();
-	}, 3000);
+	}, 2000);
 
 });
 
