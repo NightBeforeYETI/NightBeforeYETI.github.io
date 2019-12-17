@@ -51,7 +51,7 @@ body {
 	cursor: pointer;
 	border-radius: 30px;
 	position: relative;
-	top: 50px;
+	top: 20px;
 }
 
 #prev:hover {
