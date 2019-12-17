@@ -19,6 +19,7 @@
 #flipbook {
 	width: 100%;
 	margin: auto !important;
+	margin-top: 2%;
 }
 
 #flipContain {
@@ -42,7 +43,6 @@ body {
 	position: relative;
 	height: 100vh;
 	text-align: center;
-	margin-top: 2%;
 }
 
 #prev {
