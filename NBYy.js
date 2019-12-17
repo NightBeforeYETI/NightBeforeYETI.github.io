@@ -60,7 +60,10 @@ $(document).ready(function() {
 	
 	
 	
-	$("#loading").fadeOut(1000);
+	setTimeout(function(){
+	
+		$("#loading").fadeOut(1000);
+	}, 50);
 	
 
 });
